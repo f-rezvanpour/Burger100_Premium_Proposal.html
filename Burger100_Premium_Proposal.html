@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>Brand Book | Burger 100</title>
+<style>
+@page { size: A4 landscape; margin: 0; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#111;color:#fff;font-family:'IRANSansX','IRANSans','Iran Sans','Tahoma',sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+:root{--black:#0B0B0B;--gold:#D6A526;--cream:#F2E8D5;--white:#FFFFFF;--muted:#b9b3a7;--line:#2a2a2a}
+.page{width:297mm;height:210mm;position:relative;overflow:hidden;background:var(--black);padding:17mm 19mm;break-after:page;page-break-after:always}
+.page.light{background:var(--cream);color:var(--black)}
+.page.white{background:white;color:var(--black)}
+.gold{color:var(--gold)} .cream{color:var(--cream)} .muted{color:var(--muted)}
+.kicker{font:600 9pt 'IRANYekanX','IRANYekan','IranYekan','IRANSansX','IRANSans',sans-serif;letter-spacing:.6px;color:var(--gold);margin-bottom:5mm}
+h1{font-size:29pt;line-height:1.35;margin:0 0 4mm;font-weight:900;letter-spacing:-.5px}
+h2{font-size:16pt;margin:0 0 4mm;font-weight:800} h3{font-size:11.5pt;margin:0 0 2mm;font-weight:800}
+p{font-size:9.2pt;line-height:1.95;margin:0 0 3.5mm;color:#e6e0d5}.light p,.white p{color:#3b352d}
+.small{font-size:7.8pt;line-height:1.75}.micro{font-size:6.8pt;line-height:1.65}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:9mm}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:6mm}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:5mm}
+.card{border:1px solid #302d28;border-radius:5mm;padding:6mm;background:rgba(255,255,255,.025)}.light .card,.white .card{background:rgba(255,255,255,.45);border-color:#d6cab4}
+.card.goldline{border-top:1.4mm solid var(--gold)}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:5mm 0}.line{height:1px;background:#2b2926;margin:3.5mm 0}
+.badge{display:inline-block;padding:1.2mm 3mm;border:1px solid var(--gold);border-radius:20mm;font-size:7pt;color:var(--gold)}
+.logo{object-fit:contain;display:block}.logo.hero{width:84mm;height:84mm}.logo.small{width:42mm;height:42mm}.logo.mini{width:25mm;height:25mm}
+.page-no{position:absolute;left:18mm;bottom:9mm;color:#7e7668;font-size:6.5pt;direction:ltr;letter-spacing:1px}.footer-brand{position:absolute;right:19mm;bottom:8.5mm;color:#7e7668;font-size:6.3pt;letter-spacing:1px;direction:ltr}
+.cover{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;height:100%}.cover h1{font-size:42pt;line-height:1.15}.cover .logo-wrap{display:flex;align-items:center;justify-content:center;position:relative}.ring{position:absolute;width:105mm;height:105mm;border:1px solid rgba(214,165,38,.2);border-radius:50%}.ring.r2{width:125mm;height:125mm;border-color:rgba(214,165,38,.09)}
+.big100{font-size:86pt;font-weight:900;line-height:1;color:var(--gold);letter-spacing:-4px;direction:ltr;font-family:Arial,sans-serif}
+.statement{font-size:18pt;line-height:1.9;font-weight:700;max-width:210mm}.statement strong{color:var(--gold)}
+.quote{border-right:1.5mm solid var(--gold);padding-right:5mm;margin-top:5mm}
+.value{min-height:47mm}.value .num{font-size:26pt;color:var(--gold);font-family:Arial,sans-serif;font-weight:700;direction:ltr}.value h3{font-size:13pt}
+ul{margin:2mm 0 0;padding:0 5mm 0 0}li{font-size:8.5pt;line-height:1.9;margin-bottom:1mm;color:#ddd5c8}.light li,.white li{color:#3c352d}
+.table{width:100%;border-collapse:collapse;font-size:7.6pt;line-height:1.6}.table th{background:var(--gold);color:#0b0b0b;text-align:right;padding:2.7mm 3mm;font-weight:900}.table td{border-bottom:1px solid #36332e;padding:2.4mm 3mm;vertical-align:top}.light .table td,.white .table td{border-bottom-color:#d5c8b3}.table tr:last-child td{border-bottom:none}
+.swatch{height:36mm;border-radius:4mm;padding:5mm;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}.swatch.dark{background:#0B0B0B}.swatch.goldbg{background:#D6A526;color:#0b0b0b}.swatch.whitebg{background:#fff;color:#0b0b0b;border:1px solid #ddd}.swatch.creambg{background:#F2E8D5;color:#0b0b0b}.swatch .hex{font:800 15pt Arial;direction:ltr}.swatch .name{font-size:8.5pt;font-weight:800}
+.logo-anatomy{display:grid;grid-template-columns:.95fr 1.05fr;gap:10mm;align-items:center}.anatomy-list{counter-reset:a}.anatomy-item{counter-increment:a;display:grid;grid-template-columns:9mm 1fr;gap:3mm;margin-bottom:4mm}.anatomy-item:before{content:counter(a);width:8mm;height:8mm;border-radius:50%;background:var(--gold);color:#111;display:flex;align-items:center;justify-content:center;font:bold 8pt Arial}
+.variant{height:50mm;border-radius:4mm;display:flex;align-items:center;justify-content:center;border:1px solid #302d28;position:relative;overflow:hidden}.variant img{width:43mm;height:43mm;object-fit:contain}.variant.whitev{background:#fff}.variant.creamv{background:var(--cream)}.variant .label{position:absolute;bottom:2.2mm;right:3mm;font-size:6.4pt;color:#9e9588}.variant.whitev .label,.variant.creamv .label{color:#6f665a}
+.safe-space{height:94mm;position:relative;display:flex;align-items:center;justify-content:center;border:1px dashed #4f4739;border-radius:5mm;background:#111}.safe-space img{width:62mm;height:62mm;object-fit:contain}.safe-space:before{content:'0.5X';position:absolute;top:5mm;left:50%;transform:translateX(-50%);color:var(--gold);font:700 8pt Arial}.safe-space:after{content:'';position:absolute;inset:16mm;border:1px solid rgba(214,165,38,.6);border-style:dashed}
+.dont{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}.dont .x{border:1px solid #37322c;border-radius:3mm;padding:4mm;min-height:29mm}.x b{color:#e9b837}.x span{font-size:7.2pt;line-height:1.6;color:#d5cec2}
+.type-sample{font-family:'IRANYekanX','IRANYekan','IranYekan','IRANSansX','IRANSans',sans-serif;font-size:23pt;font-weight:900;line-height:1.5}.latin{font-family:Arial,sans-serif;direction:ltr;text-align:left}.latin.hero{font-size:28pt;font-weight:800;letter-spacing:1.2px}
+.pattern{height:44mm;border-radius:4mm;background-color:var(--cream);background-image:radial-gradient(circle at 10px 10px,rgba(11,11,11,.11) 0 1.4px,transparent 1.5px);background-size:14mm 14mm;border:1px solid #d8ccb8;position:relative}.pattern:after{content:'برگر 100';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(11,11,11,.32);font-size:16pt;font-weight:800;transform:rotate(-8deg)}
+.pack{display:grid;grid-template-columns:1fr 1fr;gap:7mm}.pack-diagram{min-height:75mm;border-radius:5mm;background:#151515;border:1px solid #302d28;padding:6mm;position:relative}.box-shape{width:84mm;height:47mm;background:#0b0b0b;border:1px solid #3e382f;position:absolute;left:50%;top:50%;transform:translate(-50%,-48%);border-radius:2mm;box-shadow:0 7mm 14mm rgba(0,0,0,.28)}.box-shape .inside{position:absolute;inset:7mm;border:1px solid rgba(214,165,38,.2);background:#F2E8D5;border-radius:1mm}.box-shape .mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--gold);font:800 15pt Arial;z-index:2}.cup{width:39mm;height:67mm;margin:auto;background:#0b0b0b;clip-path:polygon(9% 0,91% 0,80% 100%,20% 100%);position:relative;border-top:2mm solid #1a1a1a}.cup:after{content:'100';position:absolute;top:26mm;left:0;right:0;text-align:center;color:var(--gold);font:bold 15pt Arial}.tray{width:94mm;height:56mm;margin:auto;border:3mm solid #1b1b1b;border-radius:6mm;background:#0b0b0b;display:flex;align-items:center;justify-content:center;color:#272727;font:900 26pt Arial;box-shadow:inset 0 0 0 1px #3a342c}
+.uniform{display:flex;gap:7mm}.shirt,.apron{flex:1;min-height:80mm;border-radius:5mm;position:relative;overflow:hidden}.shirt{background:var(--cream);color:#111}.apron{background:#17120f;border:1px solid #3d3128}.shirt:before{content:'';position:absolute;top:-10mm;left:50%;transform:translateX(-50%);width:28mm;height:23mm;border-radius:0 0 50% 50%;background:#0b0b0b}.shirt .chest{position:absolute;top:28mm;right:32mm;border:1px solid #111;padding:2mm 3mm;font:800 7pt Arial}.apron:before{content:'';position:absolute;width:52mm;height:105mm;background:#241a14;left:50%;top:8mm;transform:translateX(-50%);clip-path:polygon(18% 0,82% 0,100% 100%,0 100%)}.apron .plate{position:absolute;z-index:2;top:32mm;left:50%;transform:translateX(-50%);background:#9f7b25;color:#130f0d;padding:2mm 6mm;font:bold 7pt Arial;border-radius:.8mm}
+.tagline{position:absolute;bottom:18mm;right:19mm;font-size:8pt;color:#9b9182}.gold-bar{position:absolute;top:0;left:0;right:0;height:2.2mm;background:var(--gold)}
+.phase{display:flex;gap:4mm;align-items:stretch}.phase .step{flex:1;border:1px solid #302d28;border-radius:3mm;padding:4mm}.phase .step .n{color:var(--gold);font:bold 14pt Arial}.phase .arrow{align-self:center;color:#706758;font-size:14pt;direction:ltr}
+.dna{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm}.dna .cell{border:1px solid #363127;padding:5mm;border-radius:4mm;min-height:34mm}.dna .en{font:700 7pt Arial;color:var(--gold);direction:ltr;text-align:left;letter-spacing:.8px}.dna .fa{font-size:10.5pt;font-weight:800;margin-top:2mm}
+
+
+/* ===== BURGER 100 WEB EXPERIENCE UPGRADE ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+html{scroll-behavior:smooth;background:#080808}
+body{font-family:'IRANSansX','IRANSans','Iran Sans','Tahoma',sans-serif;overflow-x:hidden;background:
+radial-gradient(circle at 15% 10%,rgba(214,165,38,.08),transparent 30%),
+radial-gradient(circle at 85% 30%,rgba(214,165,38,.06),transparent 35%),#080808}
+body.locked{overflow:hidden}
+body:not(.unlocked) #siteShell{filter:blur(18px);transform:scale(1.015);pointer-events:none;user-select:none}
+#siteShell{transition:filter .8s ease,transform .8s ease;transform-origin:center top}
+
+/* login */
+#authGate{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;padding:24px;overflow:hidden;background:#070707;color:#fff;transition:opacity .75s ease,visibility .75s ease}
+#authGate::before{content:'';position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(214,165,38,.18),rgba(214,165,38,.04) 38%,transparent 68%);filter:blur(8px);animation:floatGlow 7s ease-in-out infinite}
+#authGate::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 85%);pointer-events:none}
+body.unlocked #authGate{opacity:0;visibility:hidden}
+.auth-card{position:relative;z-index:2;width:min(460px,100%);padding:42px 36px;border:1px solid rgba(214,165,38,.23);border-radius:30px;background:linear-gradient(145deg,rgba(23,23,23,.94),rgba(10,10,10,.88));box-shadow:0 34px 100px rgba(0,0,0,.58),inset 0 1px rgba(255,255,255,.05);backdrop-filter:blur(22px);text-align:center}
+.auth-logo{width:112px;height:112px;object-fit:contain;margin:0 auto 18px;filter:drop-shadow(0 14px 34px rgba(214,165,38,.18))}
+.auth-eyebrow{font:700 11px Montserrat,sans-serif;letter-spacing:2.8px;color:var(--gold);margin-bottom:9px}
+.auth-card h1{font-size:34px;margin:0 0 9px;line-height:1.35}.auth-card p{font-size:14px;line-height:1.9;color:#aaa39a;margin-bottom:24px}
+.auth-field{position:relative}.auth-field input{width:100%;height:58px;border-radius:16px;border:1px solid #312e29;background:#0d0d0d;color:#fff;padding:0 50px 0 18px;font:600 15px Montserrat,'Vazirmatn';outline:none;direction:ltr;transition:.25s}
+.auth-field input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(214,165,38,.08)}
+.auth-toggle{position:absolute;right:14px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:#82796d;cursor:pointer;font-size:17px}
+.auth-submit{width:100%;height:58px;margin-top:13px;border:0;border-radius:16px;background:linear-gradient(135deg,#e7bc4c,#b98714);color:#0b0b0b;font:900 14px 'Vazirmatn';cursor:pointer;box-shadow:0 14px 36px rgba(214,165,38,.18);transition:.25s}
+.auth-submit:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(214,165,38,.28)}
+.auth-error{min-height:24px;margin-top:10px!important;margin-bottom:0!important;color:#ff7777!important;font-size:12px!important}
+.auth-foot{margin-top:20px;font:600 9px Montserrat,sans-serif;letter-spacing:1.3px;color:#645e55}
+.auth-card.shake{animation:shake .38s ease}
+
+/* top web navigation */
+.web-nav{position:fixed;z-index:9000;top:18px;left:50%;transform:translateX(-50%);width:min(1180px,calc(100% - 30px));height:64px;padding:0 18px;display:flex;align-items:center;justify-content:space-between;border:1px solid rgba(255,255,255,.08);border-radius:20px;background:rgba(10,10,10,.76);backdrop-filter:blur(20px);box-shadow:0 16px 44px rgba(0,0,0,.28);opacity:0;pointer-events:none;transition:.5s}
+body.unlocked .web-nav{opacity:1;pointer-events:auto}.nav-brand{display:flex;align-items:center;gap:10px;direction:ltr;font:800 13px Montserrat,sans-serif;letter-spacing:1px}.nav-brand img{width:38px;height:38px;object-fit:contain}.nav-links{display:flex;gap:5px;overflow:auto}.nav-links a{color:#aaa49b;text-decoration:none;padding:9px 11px;border-radius:10px;font-size:11px;white-space:nowrap;transition:.2s}.nav-links a:hover,.nav-links a.active{background:rgba(214,165,38,.1);color:var(--gold)}
+.progress{position:fixed;z-index:9001;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#a87910,#f1c95e);box-shadow:0 0 12px rgba(214,165,38,.6)}
+
+/* convert print pages into premium web sections */
+@media screen{
+  .page{width:min(1180px,calc(100% - 32px));height:auto;min-height:680px;margin:110px auto 28px;padding:72px 70px;border:1px solid rgba(255,255,255,.07);border-radius:34px;overflow:hidden;break-after:auto;page-break-after:auto;box-shadow:0 28px 80px rgba(0,0,0,.28);isolation:isolate}
+  .page:not(.light):not(.white){background:linear-gradient(150deg,#0d0d0d,#11100e 60%,#090909)}
+  .page.light{background:linear-gradient(145deg,#f4ebda,#eadbc2);box-shadow:0 28px 80px rgba(0,0,0,.22)}
+  .page.white{background:linear-gradient(145deg,#fff,#f7f3eb)}
+  .page::before{content:'';position:absolute;z-index:-1;width:420px;height:420px;border-radius:50%;top:-240px;left:-150px;background:radial-gradient(circle,rgba(214,165,38,.10),transparent 67%);pointer-events:none}
+  .page:first-of-type{margin-top:125px;min-height:760px}
+  .page-no,.footer-brand{bottom:26px}.page-no{left:34px}.footer-brand{right:34px}
+  .cover{min-height:610px}.cover .logo-wrap{min-height:420px}
+  .ring{animation:pulseRing 5s ease-in-out infinite}.ring.r2{animation-delay:-2s}
+  .card,.variant,.pack-diagram,.dna .cell,.phase .step,.dont .x{transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease,background .28s ease}
+  .card:hover,.variant:hover,.pack-diagram:hover,.dna .cell:hover,.phase .step:hover,.dont .x:hover{transform:translateY(-5px);border-color:rgba(214,165,38,.48);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+  .reveal{opacity:0;transform:translateY(34px) scale(.985);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
+  .reveal.visible{opacity:1;transform:none}
+  .logo.hero{filter:drop-shadow(0 24px 50px rgba(0,0,0,.3)) drop-shadow(0 0 36px rgba(214,165,38,.08))}
+}
+
+@keyframes floatGlow{0%,100%{transform:translate3d(-40px,-20px,0) scale(1)}50%{transform:translate3d(50px,28px,0) scale(1.13)}}
+@keyframes pulseRing{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.035);opacity:1}}
+@keyframes shake{20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+
+@media (max-width:900px){
+  .web-nav{top:10px;height:58px;border-radius:17px}.nav-links{display:none}
+  .page{width:calc(100% - 20px);margin:84px auto 20px;min-height:auto;padding:48px 26px 65px;border-radius:24px}
+  .page:first-of-type{margin-top:92px;min-height:auto}
+  .grid2,.grid3,.grid4,.logo-anatomy,.pack,.dna{grid-template-columns:1fr!important}
+  .cover{grid-template-columns:1fr!important;min-height:0;text-align:center;gap:34px}.cover .logo-wrap{min-height:300px}.cover h1{font-size:34pt}.statement{font-size:14pt}.logo.hero{width:64mm;height:64mm}
+  .uniform{flex-direction:column}.shirt,.apron{min-height:280px}.phase{overflow-x:auto;padding-bottom:8px}.phase .step{min-width:120px}.phase .arrow{flex:none}
+  .dont{grid-template-columns:1fr 1fr}.safe-space{height:280px}.page-no{left:22px}.footer-brand{right:22px}
+}
+@media (max-width:560px){
+  .auth-card{padding:32px 22px;border-radius:24px}.auth-card h1{font-size:27px}.auth-logo{width:92px;height:92px}
+  .page{padding:38px 18px 60px;border-radius:20px}.page h1{font-size:24pt}.page h2{font-size:14pt}.cover h1{font-size:29pt}.big100{font-size:65pt}.statement{font-size:12pt;line-height:1.75}
+  .dont{grid-template-columns:1fr}.variant{height:150px}.swatch{height:120px}.page-no,.footer-brand{font-size:5.6pt}.footer-brand{max-width:65%}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+@media print{#authGate,.web-nav,.progress{display:none!important}#siteShell{filter:none!important;transform:none!important}}
+
+
+/* ===== Refined premium typography ===== */
+body{font-family:'IRANSansX','IRANSans','Iran Sans','Tahoma',sans-serif}
+h1,h2,h3,.type-sample,.dna .fa,.pattern:after,.auth-card h1,.auth-submit{
+  font-family:'IRANYekanX','IRANYekan','IranYekan','IRANSansX','IRANSans','Tahoma',sans-serif;
+}
+h1{
+  font-weight:900;
+  letter-spacing:-1.1px;
+  line-height:1.42;
+  text-wrap:balance;
+}
+h2{font-weight:800;letter-spacing:-.55px;line-height:1.5}
+h3{font-weight:800;letter-spacing:-.28px;line-height:1.6}
+p,li,.small,.micro,.table,.nav-links a{font-family:'IRANSansX','IRANSans','Iran Sans','Tahoma',sans-serif}
+p{letter-spacing:-.08px}
+.kicker{
+  font-family:'IRANYekanX','IRANYekan','IranYekan','IRANSansX','IRANSans','Tahoma',sans-serif;
+  font-weight:700;
+  letter-spacing:.15px;
+}
+.statement{font-family:'IRANYekanX','IRANYekan','IranYekan','IRANSansX','IRANSans','Tahoma',sans-serif;font-weight:650;letter-spacing:-.45px}
+.badge{font-family:'Montserrat','IRANYekanX','IRANYekan','IRANSansX',sans-serif;font-weight:700;letter-spacing:.45px}
+.card h2,.card h3{letter-spacing:-.35px}
+.big100,.value .num,.swatch .hex,.latin,.nav-brand,.auth-eyebrow,.auth-foot{font-family:'Montserrat',Arial,sans-serif}
+.cover h1{letter-spacing:-1.8px}
+.gold{font-weight:inherit}
+.auth-card h1{letter-spacing:-.9px}
+.auth-card p{font-family:'IRANSansX','IRANSans','Iran Sans','Tahoma',sans-serif}
+.auth-field input{font-family:'Montserrat','IRANSansX','IRANSans','Iran Sans','Tahoma',sans-serif}
+@media(max-width:700px){
+  h1{letter-spacing:-.75px}
+  h2{letter-spacing:-.4px}
+  .cover h1{letter-spacing:-1.1px}
+}
+
+
+/* Brand mockup imagery */
+.brand-photo-frame{width:100%;height:74mm;border-radius:5mm;overflow:hidden;border:1px solid rgba(214,165,38,.22);background:#111;box-shadow:0 5mm 14mm rgba(0,0,0,.18)}
+.brand-photo-frame.compact{height:58mm;margin-top:4mm}
+.brand-photo-frame.touch{height:62mm;margin-bottom:4mm}
+.brand-photo-frame img{width:100%;height:100%;display:block;object-fit:contain;object-position:center;background:#0d0d0d;padding:2mm;transition:transform .35s ease,filter .35s ease;cursor:zoom-in}
+.brand-photo-frame:hover img{transform:scale(1.018);filter:brightness(1.05)}
+.touchpoint-card{overflow:hidden}
+.uniform-photo{flex:1;min-height:80mm;border-radius:5mm;position:relative;overflow:hidden;border:1px solid #3d3128;background:#111}
+.uniform-photo img{width:100%;height:100%;min-height:80mm;display:block;object-fit:contain;object-position:center;background:#0d0d0d;padding:2mm;transition:transform .35s ease,filter .35s ease;cursor:zoom-in}
+.uniform-photo:hover img{transform:scale(1.018);filter:brightness(1.05)}
+.uniform-caption{position:absolute;right:5mm;bottom:4mm;left:5mm;padding:3mm 4mm;border-radius:3mm;background:rgba(11,11,11,.72);backdrop-filter:blur(6px);color:#fff;border:1px solid rgba(214,165,38,.22)}
+.uniform-caption p{margin:1mm 0 0;color:#e7dfd2}
+@media(max-width:900px){.brand-photo-frame,.brand-photo-frame.compact,.brand-photo-frame.touch{height:auto;aspect-ratio:16/10}.uniform-photo img{min-height:0;aspect-ratio:4/3}}
+
+/* Fullscreen image lightbox */
+.zoomable-image{cursor:zoom-in;-webkit-tap-highlight-color:transparent}
+.image-lightbox{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:clamp(18px,4vw,56px);background:rgba(4,4,4,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .28s ease,visibility .28s ease}
+.image-lightbox.open{opacity:1;visibility:visible;pointer-events:auto}
+.image-lightbox__panel{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;max-width:96vw;max-height:94vh;transform:scale(.96) translateY(8px);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.image-lightbox.open .image-lightbox__panel{transform:scale(1) translateY(0)}
+.image-lightbox__image{display:block;max-width:min(94vw,1500px);max-height:86vh;width:auto;height:auto;object-fit:contain;border-radius:18px;background:#0b0b0b;box-shadow:0 30px 90px rgba(0,0,0,.55),0 0 0 1px rgba(214,165,38,.22)}
+.image-lightbox__caption{margin-top:12px;max-width:85vw;color:#d8d1c7;font-size:13px;text-align:center;direction:rtl}
+.image-lightbox__close{position:fixed;top:20px;right:20px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(214,165,38,.35);background:rgba(14,14,14,.82);color:#fff;font-size:27px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+.image-lightbox__close:hover{background:var(--gold);color:#111;transform:rotate(90deg)}
+.image-lightbox__hint{position:fixed;left:20px;bottom:18px;color:#9f978c;font:500 11px 'IRANSansX','IRANSans',Tahoma,sans-serif;direction:rtl}
+body.lightbox-open{overflow:hidden}
+@media(max-width:700px){.image-lightbox{padding:14px}.image-lightbox__image{max-width:94vw;max-height:82vh;border-radius:12px}.image-lightbox__close{top:12px;right:12px;width:42px;height:42px}.image-lightbox__hint{display:none}}
+@media print{.image-lightbox{display:none!important}.brand-photo-frame img,.uniform-photo img{padding:0;cursor:default}}
+
+</style>
+
+<style>
+/* Lovin Media animated end section */
+.lovin-end{min-height:72vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%,rgba(212,175,55,.13),transparent 34%),#070707;color:#fff;text-align:center;padding:80px 24px;border-top:1px solid rgba(212,175,55,.25)}
+.lovin-end:before,.lovin-end:after{content:"";position:absolute;border:1px solid rgba(212,175,55,.22);border-radius:50%;animation:lovinPulse 5s ease-in-out infinite}
+.lovin-end:before{width:440px;height:440px}.lovin-end:after{width:620px;height:620px;animation-delay:-2.5s}
+.lovin-end-inner{position:relative;z-index:2;max-width:900px}.lovin-kicker{font-size:clamp(13px,1.3vw,18px);letter-spacing:.08em;color:#c9b07a;margin-bottom:20px;opacity:0;transform:translateY(18px);animation:lovinRise .9s .15s forwards}.lovin-title{font-family:IRANYekan,IRANSans,Tahoma,sans-serif;font-size:clamp(30px,5vw,66px);font-weight:800;line-height:1.35;margin:0}.lovin-title span{display:inline-block;background:linear-gradient(110deg,#b78624,#f5d77e,#c3912d);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:lovinGold 3s linear infinite}.lovin-line{width:0;height:1px;background:linear-gradient(90deg,transparent,#d4af37,transparent);margin:28px auto;animation:lovinLine 1.3s .55s forwards}.lovin-sign{font-family:Montserrat,Arial,sans-serif;font-size:clamp(14px,1.6vw,21px);letter-spacing:.28em;color:#d8d0c2;opacity:0;animation:lovinFade 1s .9s forwards}.lovin-dot{width:7px;height:7px;border-radius:50%;background:#d4af37;margin:28px auto 0;box-shadow:0 0 22px rgba(212,175,55,.85);animation:lovinDot 1.8s ease-in-out infinite}
+@keyframes lovinRise{to{opacity:1;transform:none}}@keyframes lovinFade{to{opacity:1}}@keyframes lovinGold{to{background-position:200% center}}@keyframes lovinLine{to{width:min(420px,72vw)}}@keyframes lovinPulse{0%,100%{transform:scale(.92);opacity:.28}50%{transform:scale(1.06);opacity:.65}}@keyframes lovinDot{50%{transform:scale(1.65);box-shadow:0 0 35px rgba(212,175,55,1)}}
+@media(max-width:700px){.lovin-end{min-height:58vh;padding:64px 20px}.lovin-end:before{width:280px;height:280px}.lovin-end:after{width:400px;height:400px}.lovin-sign{letter-spacing:.16em}}
+@media(prefers-reduced-motion:reduce){.lovin-end *,.lovin-end:before,.lovin-end:after{animation:none!important;opacity:1!important;transform:none!important}.lovin-line{width:min(420px,72vw)}}
+</style>
+</head>
+<body class="locked">
+<div id="authGate" aria-modal="true" role="dialog" aria-labelledby="authTitle">
+  <div class="auth-card" id="authCard">
+    <img class="auth-logo" src="pic/master.png" alt="Burger 100 logo">
+    <div class="auth-eyebrow">PRIVATE PROPOSAL</div>
+    <h1 id="authTitle">ورود به پروپوزال <span class="gold">برگر 100</span></h1>
+    <p>برای مشاهده سند، رمز دسترسی را وارد کنید.</p>
+    <form id="authForm" autocomplete="off">
+      <div class="auth-field">
+        <input id="passwordInput" type="password" placeholder="Password" aria-label="رمز ورود" autofocus>
+        <button class="auth-toggle" type="button" id="togglePassword" aria-label="نمایش رمز">◉</button>
+      </div>
+      <button class="auth-submit" type="submit">ورود به پروپوزال</button>
+      <p class="auth-error" id="authError"></p>
+    </form>
+    <div class="auth-foot">BURGER 100 · CONFIDENTIAL ACCESS</div>
+  </div>
+</div>
+<div class="progress" id="scrollProgress"></div>
+<nav class="web-nav">
+  <div class="nav-brand"><img src="pic/master.png" alt=""><span>BURGER 100</span></div>
+  <div class="nav-links"><a href="#s1">شروع</a><a href="#s2">هویت</a><a href="#s6">لوگو</a><a href="#s9">رنگ</a><a href="#s12">بسته‌بندی</a><a href="#s16">فضای شعبه</a><a href="#s18">جمع‌بندی</a></div>
+</nav>
+<main id="siteShell">
+
+<section id="s1" class="page">
+  <div class="gold-bar"></div>
+  <div class="cover">
+    <div>
+      <div class="kicker">راهنمای رسمی هویت و استانداردهای برند</div>
+      <h1>کتابچه هویت برند<br><span class="gold">برگر 100</span></h1>
+      <p class="statement">یک سیستم یکپارچه برای ساخت تجربه‌ای <strong>پریمیوم، اصیل و صددرصد باکیفیت</strong> در تمام نقاط تماس برند.</p>
+      <div class="rule" style="width:70mm"></div>
+      <p class="latin small" style="color:#a59c8d;direction:ltr;text-align:left">BRAND IDENTITY GUIDELINES · VERSION 1.0</p>
+    </div>
+    <div class="logo-wrap"><div class="ring r2"></div><div class="ring"></div><img class="logo hero" src="pic/master.png" alt="Burger 100 logo"></div>
+  </div>
+  <div class="footer-brand">BURGER 100</div><div class="page-no">01</div>
+</section>
+
+<section id="s2" class="page light">
+  <div class="kicker">01 · BRAND ESSENCE</div>
+  <h1>«100» فقط یک عدد نیست؛ <span class="gold">استاندارد ماست.</span></h1>
+  <div class="grid2" style="margin-top:7mm;align-items:center">
+    <div>
+      <div class="big100">100</div>
+      <h2>صددرصد کیفیت. بدون مصالحه.</h2>
+      <p>عدد 100 در نام برگر 100 بیانگر تعهد کامل برند به کیفیت محصول، انتخاب مواد اولیه، دقت در پخت، ارائه حرفه‌ای و تجربه مشتری است. هر تصمیمی در این برند باید بتواند در برابر یک سؤال ساده مقاومت کند: «آیا این انتخاب در حد 100 است؟»</p>
+      <div class="quote"><p style="font-size:11pt;font-weight:700;color:#0b0b0b">100% Quality. Zero Compromise.</p><p class="small">جوهره برند باید در محصول، رفتار کارکنان، طراحی شعب، بسته‌بندی و ارتباطات دیجیتال یکسان احساس شود.</p></div>
+    </div>
+    <div class="grid2" style="gap:5mm">
+      <div class="card"><span class="badge">100% QUALITY</span><h3 style="margin-top:4mm">کیفیت مطلق</h3><p class="small">کیفیت به یک ماده محدود نیست؛ حاصل هماهنگی مواد اولیه، پخت، سرویس، محیط و طراحی است.</p></div>
+      <div class="card"><span class="badge">AUTHENTIC</span><h3 style="margin-top:4mm">طعم اصیل</h3><p class="small">محصول باید واقعی، قابل اعتماد و بدون اغراق غیرواقعی معرفی شود.</p></div>
+      <div class="card"><span class="badge">PREMIUM</span><h3 style="margin-top:4mm">تجربه ممتاز</h3><p class="small">لوکس بودن از سادگی کنترل‌شده، جزئیات دقیق و کیفیت پایدار ساخته می‌شود.</p></div>
+      <div class="card"><span class="badge">CONSISTENT</span><h3 style="margin-top:4mm">ثبات</h3><p class="small">مشتری باید در هر شعبه و هر سفارش، یک استاندارد شناخته‌شده دریافت کند.</p></div>
+    </div>
+  </div>
+  <div class="footer-brand">BURGER 100 · BRAND ESSENCE</div><div class="page-no">02</div>
+</section>
+
+<section id="s3" class="page">
+  <div class="kicker">02 · BRAND STORY & NAME</div>
+  <div class="grid2">
+    <div>
+      <h1>داستان نام <span class="gold">برگر 100</span></h1>
+      <p>نام برند از یک محصول روشن و یک وعده روشن ساخته شده است: «Burger» حوزه تخصص را مشخص می‌کند و «100» سطح انتظار مشتری را تعریف می‌کند. هدف این است که عدد 100 به مرور به یک دارایی مستقل برند تبدیل شود؛ نشانه‌ای که مخاطب با دیدنش، کیفیت برگر 100 را به یاد بیاورد.</p>
+      <div class="card goldline" style="margin-top:6mm"><h3>معنای 100 در زبان برند</h3><ul><li>100٪ کیفیت مواد اولیه</li><li>100٪ توجه به جزئیات</li><li>100٪ تعهد به تجربه مشتری</li><li>100٪ تمرکز بر طعم و اجرای حرفه‌ای</li><li>صفر مصالحه در استانداردهای اصلی</li></ul></div>
+    </div>
+    <div>
+      <h2>جایگاه مطلوب برند</h2>
+      <p>برگر 100 باید در ذهن مخاطب از «یک برگر فروشی خوب» فراتر برود و به مرجع قابل اعتماد برای یک تجربه برگر پریمیوم تبدیل شود؛ برندی مدرن، قابل تشخیص، محترم و در عین حال صمیمی.</p>
+      <div class="line"></div>
+      <h3>تعریف Premium در برگر 100</h3>
+      <p>Premium به معنای تجمل نمایشی نیست. تعریف ما: <b class="gold">کیفیت بالا + سادگی کنترل‌شده + اجرای دقیق + تجربه پایدار.</b> بنابراین استفاده افراطی از طلایی، تزئینات شلوغ یا لحن متکبرانه با شخصیت برند هم‌راستا نیست.</p>
+      <div class="line"></div>
+      <h3>وعده اصلی</h3><p>هر بار که نام برگر 100 دیده می‌شود، مشتری باید انتظار محصولی دقیق، خوش‌ساخت و باکیفیت را داشته باشد؛ و تجربه واقعی باید این انتظار را تأیید کند.</p>
+    </div>
+  </div>
+  <div class="footer-brand">BURGER 100 · STORY</div><div class="page-no">03</div>
+</section>
+
+<section id="s4" class="page light">
+  <div class="kicker">03 · VISION / MISSION / VALUES</div>
+  <h1>چشم‌انداز، مأموریت و <span class="gold">ارزش‌ها</span></h1>
+  <div class="grid2" style="margin-top:5mm">
+    <div class="card goldline"><h2>چشم‌انداز | Vision</h2><p>تبدیل شدن به یک زنجیره معتبر، ممتاز و سطح‌بالا در صنعت برگر؛ برندی که با طعم اصیل، کیفیت پایدار، مواد اولیه ممتاز و تجربه حرفه‌ای شناخته شود و در تمام شعب، استانداردی یکسان ارائه دهد.</p></div>
+    <div class="card goldline"><h2>مأموریت | Mission</h2><p>ارائه برگری باکیفیت و اصیل در بستری مدرن، گرم و حرفه‌ای؛ با استانداردسازی محصول، آموزش تیم، انتخاب دقیق مواد اولیه و طراحی یک تجربه منسجم از سفارش تا آخرین تماس با بسته‌بندی.</p></div>
+  </div>
+  <div class="grid3" style="margin-top:7mm">
+    <div class="card value"><div class="num">01</div><h3>کیفیت | Quality</h3><p class="small">مهم‌ترین اصل. هیچ تصمیمی نباید برای کاهش هزینه، کیفیت تجربه مشتری را به‌طور محسوس کاهش دهد.</p></div>
+    <div class="card value"><div class="num">02</div><h3>اصالت | Authenticity</h3><p class="small">تصویر، طعم و ارتباطات باید واقعی و قابل اعتماد باشند. محصول باید همان چیزی باشد که وعده داده می‌شود.</p></div>
+    <div class="card value"><div class="num">03</div><h3>لوکس بودن | Luxury</h3><p class="small">لوکس بودن یعنی کیفیت بالاتر، جزئیات دقیق‌تر و تجربه‌ای تمیز و حساب‌شده؛ نه شلوغی و تجمل افراطی.</p></div>
+  </div>
+  <div class="footer-brand">BURGER 100 · STRATEGY</div><div class="page-no">04</div>
+</section>
+
+<section id="s5" class="page">
+  <div class="kicker">04 · PERSONALITY & TONE OF VOICE</div>
+  <h1>برند مثل یک <span class="gold">سرآشپز حرفه‌ای</span> رفتار می‌کند.</h1>
+  <div class="grid2" style="margin-top:5mm">
+    <div>
+      <div class="card"><h2>شخصیت برند</h2><p>اگر برگر 100 یک انسان بود، یک سرآشپز ماهر و باتجربه بود: به کارش مسلط، عاشق حرفه‌اش، سخت‌گیر در کیفیت، جزئی‌نگر و مطمئن؛ اما هرگز متکبر یا دور از مخاطب.</p><div class="rule"></div><div class="grid3"><div><span class="badge">EXPERT</span><h3 style="margin-top:3mm">متخصص</h3></div><div><span class="badge">WARM</span><h3 style="margin-top:3mm">صمیمی</h3></div><div><span class="badge">PREMIUM</span><h3 style="margin-top:3mm">ممتاز</h3></div></div></div>
+    </div>
+    <div class="grid2" style="gap:5mm">
+      <div class="card"><h3 class="gold">لحن مطلوب</h3><ul><li>دوستانه و گرم</li><li>محترمانه و در دسترس</li><li>مطمئن و روشن</li><li>ساده و خوش‌خوان</li><li>نزدیک به مخاطب</li></ul></div>
+      <div class="card"><h3 class="gold">لحن نامطلوب</h3><ul><li>خشک و اداری</li><li>متکبر و فاصله‌دار</li><li>بیش از حد شوخ</li><li>اغراق‌آمیز</li><li>توهین‌آمیز یا عامیانه افراطی</li></ul></div>
+      <div class="card" style="grid-column:1/3"><h3>اصل ارتباطی</h3><p class="small">برگر 100 لازم نیست بگوید «ما لوکس هستیم». مخاطب باید Premium بودن را از کیفیت محصول، طراحی، برخورد کارکنان، نظم و جزئیات تجربه کند.</p></div>
+    </div>
+  </div>
+  <div class="footer-brand">BURGER 100 · VOICE</div><div class="page-no">05</div>
+</section>
+
+<section id="s6" class="page light">
+  <div class="kicker">05 · MASTER LOGO</div>
+  <h1>ساختار و منطق <span class="gold">لوگوی اصلی</span></h1>
+  <div class="logo-anatomy" style="margin-top:5mm">
+    <div style="display:flex;justify-content:center"><img src="pic/master.png" class="logo hero" alt="logo"></div>
+    <div class="anatomy-list">
+      <div class="anatomy-item"><div><h3>نان برگر مینیمال</h3><p class="small">نشانه مستقیم دسته محصول و نقطه شروع تشخیص سریع برند.</p></div></div>
+      <div class="anatomy-item"><div><h3>خطوط سیال طلایی</h3><p class="small">تداعی‌کننده سس، پنیر، حرکت، طعم و لایه‌های تجربه پریمیوم.</p></div></div>
+      <div class="anatomy-item"><div><h3>تایپوگرافی «برگر»</h3><p class="small">هویت فارسی و عنصر اصلی خوانش نام در بازار داخلی.</p></div></div>
+      <div class="anatomy-item"><div><h3>عدد 100</h3><p class="small">دارایی مرکزی برند و نماد تعهد کامل به کیفیت.</p></div></div>
+      <div class="anatomy-item"><div><h3>ساختار دایره‌ای باز</h3><p class="small">لوگو را در قالب یک Badge منسجم نگه می‌دارد و حس حرکت و پویایی می‌سازد.</p></div></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:5mm"><b>اصل غیرقابل‌تغییر:</b> فایل لوگوی نهایی تأییدشده، مرجع مادر برند است. هندسه، نسبت‌ها، فرم حروف، عدد 100 و ترکیب‌بندی آن بدون تأیید رسمی نباید تغییر کند.</div>
+  <div class="footer-brand">BURGER 100 · MASTER LOGO</div><div class="page-no">06</div>
+</section>
+
+<section id="s7" class="page">
+  <div class="kicker">06 · LOGO VARIATIONS</div>
+  <h1>نسخه‌های مجاز <span class="gold">لوگو</span></h1>
+  <div class="grid4" style="margin-top:6mm">
+    <div><div class="variant"><img src="pic/master.png" alt="Master Burger 100 logo"><span class="label">MASTER</span></div><h3 style="margin-top:3mm">Master Logo</h3><p class="micro">مشکی، طلایی و سفید؛ برای تابلو، منو، دیجیتال و بسته‌بندی اصلی.</p></div>
+    <div><div class="variant whitev"><img src="pic/ppt.png" alt="Burger 100 monochrome logo"><span class="label">MONO BLACK</span></div><h3 style="margin-top:3mm">Monochrome</h3><p class="micro">تک‌رنگ Solid برای مهر، رسید، اسناد و چاپ محدود.</p></div>
+    <div><div class="variant creamv"><img src="pic/ppt.png" alt="Burger 100 simplified line logo"><span class="label">LINE ART</span></div><h3 style="margin-top:3mm">Line Art</h3><p class="micro">نسخه ساده‌شده برای حک لیزر، دسته ابزار و سطوح کوچک.</p></div>
+    <div><div class="variant" style="background:#20170f"><img src="pic/ppt.png" alt="Burger 100 emboss deboss logo"><span class="label">DEBOSS</span></div><h3 style="margin-top:3mm">Emboss / Deboss</h3><p class="micro">اجرای ساختاری بدون Gradient برای چرم، مقوا، چوب و پلاستیک قالبی.</p></div>
+  </div>
+  <div class="card" style="margin-top:7mm"><h3>عمق پیشنهادی اجرای فیزیکی</h3><table class="table"><tr><th>متریال</th><th>عمق پیشنهادی</th><th>روش</th></tr><tr><td>مقوا</td><td>0.3-0.6 mm</td><td>Emboss / Deboss</td></tr><tr><td>چرم</td><td>0.5-1.0 mm</td><td>Heat Emboss</td></tr><tr><td>چوب</td><td>0.7-1.5 mm</td><td>Laser / CNC</td></tr><tr><td>پلاستیک قالبی</td><td>0.4-0.8 mm</td><td>Molded Deboss</td></tr></table></div>
+  <div class="footer-brand">BURGER 100 · LOGO SYSTEM</div><div class="page-no">07</div>
+</section>
+
+<section id="s8" class="page">
+  <div class="kicker">07 · CLEAR SPACE / SCALE / MISUSE</div>
+  <div class="grid2">
+    <div>
+      <h1>فضای امن و <span class="gold">مقیاس</span></h1>
+      <div class="safe-space"><img src="pic/master.png"></div>
+      <p class="micro" style="margin-top:3mm">واحد X برابر ارتفاع عدد 100 در لوگوی اصلی تعریف می‌شود. حداقل فضای امن 0.5X در چهار طرف است؛ در کاربردهای Premium استفاده از 1X توصیه می‌شود.</p>
+    </div>
+    <div>
+      <h2>حداقل اندازه</h2>
+      <table class="table"><tr><th>کاربرد</th><th>حداقل عرض</th></tr><tr><td>Master Logo چاپی</td><td>30 mm</td></tr><tr><td>Master Logo دیجیتال</td><td>140 px</td></tr><tr><td>Simplified Logo</td><td>15 mm</td></tr><tr><td>Monochrome</td><td>18 mm</td></tr><tr><td>Laser Mark</td><td>12 mm</td></tr></table>
+      <h2 style="margin-top:5mm">استفاده‌های غیرمجاز</h2>
+      <div class="dont"><div class="x"><b>× تغییر نسبت</b><br><span>کشیده یا فشرده کردن لوگو ممنوع.</span></div><div class="x"><b>× تغییر رنگ</b><br><span>رنگ‌های خارج از سیستم برند استفاده نشود.</span></div><div class="x"><b>× افکت اضافه</b><br><span>Glow، Shadow و Bevel دیجیتال ممنوع.</span></div><div class="x"><b>× جابه‌جایی</b><br><span>اجزای لوگو از هم تفکیک یا بازچینی نشوند.</span></div><div class="x"><b>× پس‌زمینه شلوغ</b><br><span>خوانایی لوگو باید همیشه حفظ شود.</span></div><div class="x"><b>× فایل کم‌کیفیت</b><br><span>برای چاپ حرفه‌ای از فایل وکتور استفاده شود.</span></div></div>
+    </div>
+  </div>
+  <div class="footer-brand">BURGER 100 · LOGO RULES</div><div class="page-no">08</div>
+</section>
+
+<section id="s9" class="page white">
+  <div class="kicker">08 · CORPORATE COLORS</div>
+  <h1>پالت رنگ <span class="gold">سازمانی</span></h1>
+  <div class="grid4" style="margin-top:6mm">
+    <div><div class="swatch dark"><span class="name">Luxury Matte Black</span><span class="hex">#0B0B0B</span></div><p class="micro" style="margin-top:2.5mm;color:#333"><b>RGB:</b> 11/11/11<br><b>CMYK:</b> 0/0/0/96<br><b>Pantone:</b> Black 6 C</p></div>
+    <div><div class="swatch goldbg"><span class="name">Premium Gold</span><span class="hex">#D6A526</span></div><p class="micro" style="margin-top:2.5mm;color:#333"><b>RGB:</b> 214/165/38<br><b>CMYK:</b> 0/23/82/16<br><b>Pantone:</b> 7555 C<br><b>Metallic Option:</b> 871 C</p></div>
+    <div><div class="swatch whitebg"><span class="name">Pure White</span><span class="hex">#FFFFFF</span></div><p class="micro" style="margin-top:2.5mm;color:#333"><b>RGB:</b> 255/255/255<br><b>CMYK:</b> 0/0/0/0<br><b>Spot:</b> Opaque White</p></div>
+    <div><div class="swatch creambg"><span class="name">Light Cream</span><span class="hex">#F2E8D5</span></div><p class="micro" style="margin-top:2.5mm;color:#333"><b>RGB:</b> 242/232/213<br><b>CMYK:</b> 0/4/12/5<br><b>Pantone:</b> 468 C</p></div>
+  </div>
+  <div class="grid2" style="margin-top:5mm">
+    <div class="card"><h3>نسبت استفاده پیشنهادی</h3><table class="table"><tr><th>رنگ</th><th>سهم</th></tr><tr><td>Matte Black</td><td>55%</td></tr><tr><td>Light Cream</td><td>25%</td></tr><tr><td>Pure White</td><td>10%</td></tr><tr><td>Premium Gold</td><td>10%</td></tr></table></div>
+    <div class="card"><h3>اصل طلایی</h3><p class="small">طلایی باید Accent باشد، نه سطح غالب. در چاپ‌های مهم، تطبیق رنگ با نمونه فیزیکی و Proof تأیید شود؛ رنگ متالیک واقعی با نمایشگر و CMYK یکسان نیست.</p><p class="small"><b>پیشنهاد تولید:</b> برای پکیج‌های ویژه از Gold Foil یا Pantone 871 C استفاده شود؛ برای تولید عمومی، 7555 C مرجع رنگی برند است.</p></div>
+  </div>
+  <div class="footer-brand">BURGER 100 · COLOR SYSTEM</div><div class="page-no">09</div>
+</section>
+
+<section id="s10" class="page light">
+  <div class="kicker">09 · TYPOGRAPHY</div>
+  <h1>سیستم <span class="gold">تایپوگرافی</span></h1>
+  <div class="grid2" style="margin-top:5mm">
+    <div>
+      <div class="card"><div class="type-sample">برگر 100<br>صددرصد کیفیت</div><div class="line"></div><h3>فارسی / عربی</h3><p class="small"><b>Peyda Variable</b> گزینه اصلی پیشنهادی برای تیترها و متن‌های برند است. جایگزین استاندارد: <b>Estedad</b>. ساختار فونت باید هندسی، تمیز، Bold و دارای منحنی‌های نرم باشد.</p></div>
+      <div class="card" style="margin-top:5mm"><table class="table"><tr><th>سطح</th><th>وزن فارسی</th></tr><tr><td>Hero / H1</td><td>ExtraBold / Bold</td></tr><tr><td>H2</td><td>Bold</td></tr><tr><td>CTA / Price</td><td>Medium</td></tr><tr><td>Body</td><td>Regular</td></tr></table></div>
+    </div>
+    <div>
+      <div class="card"><div class="latin hero">BURGER 100<br>100% QUALITY.</div><div class="line"></div><h3>English</h3><p class="small"><b>Montserrat</b> به‌عنوان فونت پیشنهادی انگلیسی. برای تیترهای کوتاه استفاده از UPPERCASE مجاز است. وزن‌های Bold، SemiBold، Medium و Regular برای سلسله‌مراتب توصیه می‌شوند.</p></div>
+      <div class="card" style="margin-top:5mm"><h3>قواعد تایپوگرافی</h3><ul><li>از بیش از دو خانواده فونت در یک Touchpoint استفاده نشود.</li><li>تیترها کوتاه، قدرتمند و دارای فضای خالی کافی باشند.</li><li>Tracking انگلیسی در تیترهای کوتاه می‌تواند کمی بازتر باشد.</li><li>متن فارسی بیش از حد Condensed یا تزئینی نباشد.</li></ul></div>
+    </div>
+  </div>
+  <div class="footer-brand">BURGER 100 · TYPOGRAPHY</div><div class="page-no">10</div>
+</section>
+
+<section id="s11" class="page">
+  <div class="kicker">10 · VISUAL LANGUAGE</div>
+  <h1>زبان بصری <span class="gold">برند</span></h1>
+  <div class="grid3" style="margin-top:5mm">
+    <div class="card"><h3>Iconography</h3><p class="small">آیکون‌ها باید Line-Based، Rounded، Minimal و Geometric باشند. ضخامت خطوط در هر مجموعه ثابت بماند.</p><div class="rule"></div><p class="micro">Beef · Chicken · Spicy · Cheese · Fries · Drinks · Takeaway · Delivery</p></div>
+    <div class="card"><h3>Photography</h3><p class="small">تصاویر واقعی، اشتهابرانگیز و دارای Texture طبیعی. نور گرم جهت‌دار 3200-4000K، پس‌زمینه Matte Black، Dark Wood، Charcoal یا Dark Stone.</p><div class="rule"></div><p class="micro">Depth of Field متوسط تا کم برای Hero Food Photography.</p></div>
+    <div class="card"><h3>Composition</h3><p class="small">فضای منفی بخشی از هویت است. محصول Hero باید واضح و غالب باشد؛ Props کم و کنترل‌شده باشند.</p><div class="rule"></div><p class="micro">Black Base + Cream Warmth + Gold Accent</p></div>
+  </div>
+  <div class="grid2" style="margin-top:7mm">
+    <div class="card"><h3 class="gold">اجتناب شود</h3><ul><li>اشباع و HDR شدید</li><li>سس، پنیر یا بافت غیرطبیعی</li><li>پس‌زمینه شلوغ و Props متعدد</li><li>نور سفید سرد و بیمارستانی</li><li>فیلترهای شبکه اجتماعی</li></ul></div>
+    <div class="card"><h3>قاعده واقع‌گرایی</h3><p>تصویر تبلیغاتی باید به محصول واقعی شعبه وفادار باشد. Premium بودن از ارائه بهتر واقعیت می‌آید، نه ساختن محصولی که مشتری در سفارش خود دریافت نمی‌کند.</p></div>
+  </div>
+  <div class="footer-brand">BURGER 100 · VISUAL LANGUAGE</div><div class="page-no">11</div>
+</section>
+
+<section id="s12" class="page light">
+  <div class="kicker">11 · PACKAGING SYSTEM</div>
+  <h1>بسته‌بندی؛ <span class="gold">رسانه دوم برند</span></h1>
+  <div class="grid2" style="margin-top:5mm;align-items:center">
+    <div>
+      <p class="statement" style="font-size:15pt;color:#0b0b0b">هر بسته باید هم‌زمان <strong>Premium</strong>، کاربردی و بلافاصله قابل شناسایی باشد.</p>
+      <div class="card" style="margin-top:5mm"><h3>اصول سیستم</h3><ul><li>حداقل 40٪ فضای سطح، خلوت و بدون شلوغی بصری باقی بماند.</li><li>لوگو کنترل‌شده باشد و بیش از حد بزرگ نشود.</li><li>طلایی فقط برای لوگو یا Accentهای محدود استفاده شود.</li><li>داخل بسته‌بندی نیز بخشی از تجربه طراحی است.</li><li>تمام مواد در تماس با غذا باید Food Grade باشند.</li></ul></div>
+    </div>
+    <div>
+      <div class="brand-photo-frame"><img src="pic/packing.png" alt="Burger 100 packaging system"></div>
+      <div class="phase" style="margin-top:5mm"><div class="step"><div class="n">01</div><b>SEE</b><p class="micro">شناخت سریع برند</p></div><div class="arrow">›</div><div class="step"><div class="n">02</div><b>OPEN</b><p class="micro">تجربه بازکردن</p></div><div class="arrow">›</div><div class="step"><div class="n">03</div><b>EAT</b><p class="micro">کیفیت محصول</p></div><div class="arrow">›</div><div class="step"><div class="n">04</div><b>REMEMBER</b><p class="micro">یادآوری برند</p></div></div>
+    </div>
+  </div>
+  <div class="footer-brand">BURGER 100 · PACKAGING</div><div class="page-no">12</div>
+</section>
+
+<section id="s13" class="page">
+  <div class="kicker">12 · WRAPPING PAPER & FOOD BOXES</div>
+  <h1>کاغذ برگر و <span class="gold">جعبه غذا</span></h1>
+  <div class="pack" style="margin-top:5mm">
+    <div class="pack-diagram">
+      <h3>BURGER WRAPPING PAPER</h3>
+      <div class="brand-photo-frame compact"><img src="pic/paper.png" alt="Burger 100 wrapping paper"></div>
+    </div>
+    <div class="pack-diagram">
+      <h3>FOOD & SIDES BOXES</h3>
+      <div class="brand-photo-frame compact"><img src="pic/boxe.png" alt="Burger 100 food and sides boxes"></div>
+    </div>
+  </div>
+  <div class="grid2" style="margin-top:5mm">
+    <div class="card"><h3>Wrapping Paper</h3><table class="table"><tr><th>مشخصه</th><th>استاندارد</th></tr><tr><td>متریال</td><td>Food Grade Greaseproof</td></tr><tr><td>وزن</td><td>40-50 GSM</td></tr><tr><td>زمینه</td><td>Light Cream #F2E8D5</td></tr><tr><td>Pattern</td><td>Line Art / 25-35 mm / فاصله 15-25 mm</td></tr><tr><td>چاپ</td><td>Matte Black / شدت بصری حدود 15-25%</td></tr></table></div>
+    <div class="card"><h3>Food & Sides Boxes</h3><table class="table"><tr><th>مشخصه</th><th>استاندارد</th></tr><tr><td>متریال</td><td>SBS 300-350 GSM یا Food Grade Kraft</td></tr><tr><td>بیرون</td><td>Matte Black + Anti-Scuff / Soft Touch</td></tr><tr><td>داخل</td><td>Light Cream</td></tr><tr><td>لوگو</td><td>Master Gold / 35-45% عرض درب</td></tr><tr><td>Premium Finish</td><td>Gold Foil / Metallic Gold</td></tr></table></div>
+  </div>
+  <div class="footer-brand">BURGER 100 · PACKAGING SPECS</div><div class="page-no">13</div>
+</section>
+
+<section id="s14" class="page light">
+  <div class="kicker">13 · CUPS / NAPKINS / TRAYS</div>
+  <h1>نقاط تماس <span class="gold">سرو و مصرف</span></h1>
+  <div class="grid3" style="margin-top:5mm">
+    <div class="card touchpoint-card"><div class="brand-photo-frame touch"><img src="pic/cups.png" alt="Burger 100 beverage cups"></div><h3 style="margin-top:4mm">Beverage Cups</h3><p class="micro">Double-wall برای نوشیدنی گرم؛ نمای Matte Black؛ لوگوی Solid White یا Gold در مرکز محور اصلی. عرض بصری لوگو حدود 35-40٪ سطح روبه‌رو. درب Black یا Cream.</p></div>
+    <div class="card touchpoint-card"><div class="brand-photo-frame touch"><img src="pic/Napkins.png" alt="Burger 100 napkins"></div><h3>Napkins</h3><p class="micro">Eco-friendly Kraft Brown یا Natural Cream؛ Soft Cellulose؛ لوگوی Monochrome Black در گوشه، 25-35 mm و فاصله 10-15 mm از لبه.</p></div>
+    <div class="card touchpoint-card"><div class="brand-photo-frame touch"><img src="pic/Dine.png" alt="Burger 100 dine-in trays"></div><h3>Dine-in Trays</h3><p class="micro">Heavy Polypropylene Matte Black با Deboss مرکزی، یا Beechwood طبیعی با Food-safe matte coating و Laser Engraving. لوگو حدود 20-25٪ عرض سینی.</p></div>
+  </div>
+  <div class="footer-brand">BURGER 100 · TOUCHPOINTS</div><div class="page-no">14</div>
+</section>
+
+<section id="s15" class="page">
+  <div class="kicker">14 · STAFF UNIFORM CODE</div>
+  <h1>یونیفرم: <span class="gold">تمیز، حرفه‌ای، ممتاز</span></h1>
+  <div class="uniform" style="margin-top:6mm">
+    <div class="uniform-photo"><img src="pic/shirt.png" alt="Burger 100 staff shirt"><div class="uniform-caption"><b>SHIRT</b><p class="micro">Light Cream · Tailored Crewneck / Polo</p></div></div>
+    <div class="uniform-photo"><img src="pic/apron.png" alt="Burger 100 staff apron"><div class="uniform-caption"><b>APRON</b><p class="micro">Dark Brown / Matte Black Leather</p></div></div>
+  </div>
+  <div class="grid2" style="margin-top:5mm">
+    <div class="card"><h3>Shirt Specification</h3><ul><li>رنگ Light Cream #F2E8D5</li><li>مدل Tailored Crewneck یا Premium Polo</li><li>Fit: Regular / Tailored، نه Oversized و نه Tight</li><li>لوگوی Monochrome Black روی سینه چپ</li><li>عرض لوگو دقیقاً 50 mm</li><li>اجرا: Screen Print، Embroidery متراکم یا Premium Heat Transfer</li></ul></div>
+    <div class="card"><h3>Apron Specification</h3><ul><li>چرم طبیعی یا Synthetic Leather باکیفیت</li><li>رنگ Dark Brown یا Matte Black</li><li>Heat Emboss عمیق 0.5-1 mm، عرض 60-80 mm</li><li>گزینه جایگزین: Brushed Brass Plate حدود 60×25 mm</li><li>از پلاک Mirror Gold و بازتاب شدید جلوگیری شود.</li></ul></div>
+  </div>
+  <div class="footer-brand">BURGER 100 · UNIFORM</div><div class="page-no">15</div>
+</section>
+
+<section id="s16" class="page light">
+  <div class="kicker">15 · ENVIRONMENT / SIGNAGE / MENU / DIGITAL</div>
+  <h1>هویت برند در <span class="gold">فضای شعبه</span></h1>
+  <div class="grid4" style="margin-top:5mm">
+    <div class="card"><h3>Interior</h3><p class="micro">Matte Black Metal، Dark/Natural Wood، Black Stone، Cream Textiles و Brushed Brass. نور عمومی گرم 2700-3200K و CRI ترجیحاً 90+.</p></div>
+    <div class="card"><h3>Signage</h3><p class="micro">زمینه Matte Black، Master Logo سفید/طلایی، حروف برجسته با Backlit یا Halo. دمای نور 2700-3000K. نور RGB متغیر ممنوع.</p></div>
+    <div class="card"><h3>Menu</h3><p class="micro">ساختار Black / Cream / Gold با نسبت حدودی 70/20/10. نام محصول مهم‌تر از قیمت. هر آیتم: نام + توضیح کوتاه + قیمت.</p></div>
+    <div class="card"><h3>Social</h3><p class="micro">Close-up Food Photography، زمینه تیره، تایپوگرافی سفید و Accent طلایی. Logo Lockup کوچک و کنترل‌شده؛ لوگوی بزرگ روی تمام پست‌ها ممنوع.</p></div>
+  </div>
+  <div class="card" style="margin-top:7mm"><h2>تجربه مشتری باید یک خط پیوسته باشد.</h2><div class="phase" style="margin-top:5mm"><div class="step"><div class="n">01</div><b>DISCOVER</b><p class="micro">دیدن برند</p></div><div class="arrow">›</div><div class="step"><div class="n">02</div><b>ORDER</b><p class="micro">سفارش ساده</p></div><div class="arrow">›</div><div class="step"><div class="n">03</div><b>RECEIVE</b><p class="micro">ارائه حرفه‌ای</p></div><div class="arrow">›</div><div class="step"><div class="n">04</div><b>TASTE</b><p class="micro">تأیید وعده</p></div><div class="arrow">›</div><div class="step"><div class="n">05</div><b>RETURN</b><p class="micro">وفاداری</p></div></div></div>
+  <div class="footer-brand">BURGER 100 · ENVIRONMENT</div><div class="page-no">16</div>
+</section>
+
+<section id="s17" class="page">
+  <div class="kicker">16 · PRODUCTION & BRAND CONTROL</div>
+  <h1>استاندارد فایل و <span class="gold">کنترل کیفیت</span></h1>
+  <div class="grid2" style="margin-top:5mm">
+    <div class="card"><h3>پکیج رسمی لوگو</h3><table class="table"><tr><th>فرمت</th><th>کاربرد</th></tr><tr><td>AI</td><td>Master Editable</td></tr><tr><td>SVG</td><td>Digital Vector</td></tr><tr><td>EPS</td><td>Professional Print</td></tr><tr><td>PDF Vector</td><td>Print / Supplier</td></tr><tr><td>PNG Transparent</td><td>Digital</td></tr><tr><td>DXF / Simplified SVG</td><td>Laser / CNC</td></tr></table></div>
+    <div>
+      <div class="card"><h3>فضای رنگی</h3><p class="small"><b>Digital:</b> RGB / sRGB<br><b>Print:</b> CMYK<br><b>Spot:</b> Pantone</p><p class="small">فایل Master هرگز نباید از JPG دوباره ساخته، Stretch یا Trace ضعیف شود.</p></div>
+      <div class="card" style="margin-top:5mm"><h3>فرآیند تأیید تولید</h3><div class="phase" style="margin-top:3mm"><div class="step"><div class="n">1</div><p class="micro">Artwork</p></div><div class="arrow">›</div><div class="step"><div class="n">2</div><p class="micro">Color Proof</p></div><div class="arrow">›</div><div class="step"><div class="n">3</div><p class="micro">Sample</p></div><div class="arrow">›</div><div class="step"><div class="n">4</div><p class="micro">Approval</p></div><div class="arrow">›</div><div class="step"><div class="n">5</div><p class="micro">Production</p></div></div></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:6mm"><h3>Consistency Rule</h3><p>در تمام شعب، لوگو، رنگ، تایپوگرافی، بسته‌بندی، یونیفرم، منو، تابلو، سبک عکاسی و لحن ارتباطی باید از سیستم مرکزی پیروی کنند. تغییرات محلی فقط زمانی مجازند که هویت اصلی برند را تضعیف نکنند.</p></div>
+  <div class="footer-brand">BURGER 100 · BRAND CONTROL</div><div class="page-no">17</div>
+</section>
+
+<section id="s18" class="page">
+  <div class="gold-bar"></div>
+  <div style="display:grid;grid-template-columns:.85fr 1.15fr;gap:12mm;height:100%;align-items:center">
+    <div style="display:flex;justify-content:center"><img src="pic/master.png" class="logo hero"></div>
+    <div>
+      <div class="kicker">17 · BRAND DNA</div>
+      <h1>هویت نهایی <span class="gold">برگر 100</span></h1>
+      <div class="dna" style="margin-top:6mm">
+        <div class="cell"><div class="en">WHAT WE MAKE</div><div class="fa">برگر پریمیوم</div></div>
+        <div class="cell"><div class="en">WHAT WE PROMISE</div><div class="fa">100٪ کیفیت</div></div>
+        <div class="cell"><div class="en">HOW WE WORK</div><div class="fa">بدون مصالحه</div></div>
+        <div class="cell"><div class="en">HOW WE LOOK</div><div class="fa">مشکی، طلایی، سفید، کرم</div></div>
+        <div class="cell"><div class="en">HOW WE FEEL</div><div class="fa">مدرن، گرم، ممتاز</div></div>
+        <div class="cell"><div class="en">HOW WE SPEAK</div><div class="fa">صمیمی، محترمانه، مطمئن</div></div>
+      </div>
+      <div class="quote" style="margin-top:7mm"><p style="font-size:13pt;font-weight:800">هر تصمیم با یک سؤال سنجیده می‌شود: <span class="gold">آیا در حد «100» است؟</span></p></div>
+      <p class="latin" style="margin-top:7mm;color:#d6a526;font:bold 16pt Arial;letter-spacing:1.5px">100% QUALITY. ZERO COMPROMISE.</p>
+    </div>
+  </div>
+  <div class="footer-brand">BURGER 100 · BRAND GUIDELINES V1.0</div><div class="page-no">18</div>
+</section>
+
+
+</main>
+
+<div class="image-lightbox" id="imageLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="نمایش بزرگ تصویر">
+  <button class="image-lightbox__close" id="lightboxClose" type="button" aria-label="بستن">×</button>
+  <div class="image-lightbox__panel" id="lightboxPanel">
+    <img class="image-lightbox__image" id="lightboxImage" src="" alt="">
+    <div class="image-lightbox__caption" id="lightboxCaption"></div>
+  </div>
+  <div class="image-lightbox__hint">برای بستن روی فضای بیرون تصویر کلیک کنید یا Esc بزنید</div>
+</div>
+
+<section class="lovin-end" id="lovin-media-credit" aria-label="تهیه شده توسط تیم لاوین مدیا">
+  <div class="lovin-end-inner">
+    <div class="lovin-kicker">پایان برندبوک · BURGER 100</div>
+    <h2 class="lovin-title">تهیه شده توسط تیم <span>لاوین مدیا</span></h2>
+    <div class="lovin-line"></div>
+    <div class="lovin-sign">LOVIN MEDIA · CREATIVE TEAM</div>
+    <div class="lovin-dot" aria-hidden="true"></div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const PASSWORD = 'Burger100';
+  const body = document.body;
+  const form = document.getElementById('authForm');
+  const input = document.getElementById('passwordInput');
+  const error = document.getElementById('authError');
+  const card = document.getElementById('authCard');
+  const toggle = document.getElementById('togglePassword');
+
+  function unlock(){
+    body.classList.remove('locked'); body.classList.add('unlocked');
+    sessionStorage.setItem('burger100_access','1');
+    setTimeout(() => document.getElementById('authGate')?.setAttribute('aria-hidden','true'), 800);
+  }
+  if(sessionStorage.getItem('burger100_access') === '1') unlock();
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    if(input.value === PASSWORD){ error.textContent=''; unlock(); }
+    else { error.textContent='رمز واردشده صحیح نیست.'; card.classList.remove('shake'); void card.offsetWidth; card.classList.add('shake'); input.select(); }
+  });
+  toggle.addEventListener('click', () => { input.type = input.type === 'password' ? 'text' : 'password'; toggle.textContent = input.type === 'password' ? '◉' : '◎'; input.focus(); });
+
+  document.querySelectorAll('.page').forEach((el,i) => { el.classList.add('reveal'); el.style.transitionDelay = `${Math.min(i%3,2)*60}ms`; });
+  const io = new IntersectionObserver(entries => entries.forEach(en => { if(en.isIntersecting) en.target.classList.add('visible'); }), {threshold:.10,rootMargin:'0px 0px -4% 0px'});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const progress = document.getElementById('scrollProgress');
+  const links = [...document.querySelectorAll('.nav-links a')];
+  const sections = [...document.querySelectorAll('.page')];
+  function onScroll(){
+    const max = document.documentElement.scrollHeight - innerHeight;
+    progress.style.width = (max > 0 ? (scrollY/max)*100 : 0) + '%';
+    let current = sections[0]?.id;
+    sections.forEach(s => { if(s.getBoundingClientRect().top < 180) current = s.id; });
+    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#'+current));
+  }
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // Product-image lightbox: show every mockup in full without cropping.
+  const lightbox = document.getElementById('imageLightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPanel = document.getElementById('lightboxPanel');
+  const zoomableImages = [...document.querySelectorAll('.brand-photo-frame img, .uniform-photo img')];
+
+  function openLightbox(img){
+    lightboxImage.src = img.currentSrc || img.src;
+    lightboxImage.alt = img.alt || 'Burger 100';
+    lightboxCaption.textContent = img.alt || '';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden','false');
+    document.body.classList.add('lightbox-open');
+    requestAnimationFrame(() => lightboxClose.focus());
+  }
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden','true');
+    document.body.classList.remove('lightbox-open');
+    setTimeout(() => { if(!lightbox.classList.contains('open')) lightboxImage.src=''; }, 280);
+  }
+  zoomableImages.forEach(img => {
+    img.classList.add('zoomable-image');
+    img.setAttribute('tabindex','0');
+    img.setAttribute('role','button');
+    img.setAttribute('aria-label',(img.alt || 'تصویر') + ' — نمایش بزرگ');
+    img.addEventListener('click', () => openLightbox(img));
+    img.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openLightbox(img); } });
+  });
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e => { if(e.target === lightbox) closeLightbox(); });
+  lightboxPanel.addEventListener('click', e => e.stopPropagation());
+  document.addEventListener('keydown', e => { if(e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });
+})();
+</script>
+
+</body></html>
